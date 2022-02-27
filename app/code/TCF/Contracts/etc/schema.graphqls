@@ -1,0 +1,10 @@
+
+type Query {
+    getContracts : [Contract] @resolver( class: "TCF\\Contracts\\Model\\Resolver\\Contract") @doc(description: "Get All  Contracts")
+}
+
+
+type Contract {
+    contract_id : Int @doc(description: "Primary Id")
+    title: String @doc(description: "Contract Title")
+}
